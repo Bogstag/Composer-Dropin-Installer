@@ -18,9 +18,9 @@ before_script:
 
   - ls -lah
   # Copy dropin files into /tmp so that we can require it into composer.json used by tests
-  - ln -s . /tmp/composer-dropin-repo
+  - ln -s . /tmp/dropin-installer-repo
 
-  - ls -lah /tmp/composer-dropin-repo
+  - ls -lah /tmp/dropin-installer-repo
 
   # Install test run into tests/ folder using tests/composer.json
   - cd tests && composer install
